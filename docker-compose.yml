@@ -1,0 +1,9 @@
+version: "2"
+services:
+  web:
+   build: .
+   expose:
+     - 5000
+   ports:
+     - 5000:5000
+   command: /bin/bash -c "exec invoke run"
